@@ -18,26 +18,31 @@ const cardData = [
     title: "IT Support Services",
     text: "Our customers have the right to unlimited calls and on-site support within the scope of the agreement.",
     icon: <AdsClickIcon style={{ fontSize: 48, color: '#f1f5f9' }} />,
+    imageUrl: '/images/solutions/solution2.jpeg'
   },
   {
     title: "Desktop and Server Virtualization",
     text: "Our server virtualization, workforce mobility platform enables end users to access their data and applications from any device.",
     icon: <ScreenSearchDesktopIcon style={{ fontSize: 48, color: '#f1f5f9' }} />,
+    imageUrl: '/images/solutions/solution3.jpg'
   },
   {
     title: "Network and Security Solutions",
     text: "The security of IT infrastructures of institutions is an important subject of expertise and professional protection of data security.",
     icon: <CellTowerIcon style={{ fontSize: 48, color: '#f1f5f9' }} />,
+    imageUrl: '/images/solutions/solution4.jpg'
   },
   {
     title: "Cloud Services",
     text: "A copy of our customers' Business Critical Systems is the provision of service in IT Cloud Cloud technologies.",
     icon: <CloudIcon style={{ fontSize: 48, color: '#f1f5f9' }} />,
+    imageUrl: '/images/solutions/solution5.jpeg'
   },
   {
     title: "Tracing Solutions",
     text: "With our IT Cloud Monitoring service, we monitor the entire infrastructure of our customers by setting alarms.",
     icon: <InfoIcon style={{ fontSize: 48, color: '#f1f5f9' }} />,
+    imageUrl: '/images/solutions/solution6.jpeg'
   },
 ];
 
@@ -73,7 +78,10 @@ export default function Solutions_SM() {
 
               ) : (
             <div className="relative p-2 shadow-md text-white bg-cover flex flex-col w-80 h-64 shadow-slate-500/40 align-middle justify-center text-center">
-  <div className="absolute inset-0 bg-[url('/images/customer_service.jpg')] bg-cover opacity-50 z-0"></div>
+                  <div
+                    className="absolute inset-0 bg-cover opacity-20 z-0"
+                    style={{ backgroundImage: `url(${card.imageUrl})` }}
+                  ></div>
   <div className="relative z-10">
     <h1>{card.text}</h1>
   </div>
