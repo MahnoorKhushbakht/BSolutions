@@ -46,7 +46,7 @@ function SpecialPacks_SM() {
                             className='w-80 h-full shadow-md rounded-lg overflow-hidden bg-white cursor-pointer'
                             style={{ minHeight: '30rem' }} 
                         >
-                            <div className="relative p-4 flex flex-col w-full h-64 bg-cover bg-slate-900 align-middle justify-center text-center">
+                            <div className="relative p-4 flex flex-col w-full h-64 bg-cover bg-blue-950 align-middle justify-center text-center">
                                 {/* <Image src={contentItem.cardImg} alt="Service" className="absolute inset-0 object-cover w-full h-full opacity-60" /> */}
                                 <div className="relative z-10">
                                 <div className="mb-3">{contentItem.icon}</div>

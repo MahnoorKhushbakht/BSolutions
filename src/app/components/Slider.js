@@ -12,7 +12,7 @@ export default function Slider() {
     <div className='flex relative content-center justify-center'>
       <div className='h-full w-full p-0'>
         <Swiper
-          modules={[EffectCube, Navigation, Autoplay]} 
+          modules={[EffectCube,  Autoplay]} 
           speed={1500}
           autoplay={{
             delay: 3000, 
@@ -28,10 +28,10 @@ export default function Slider() {
           }}
           spaceBetween={50} 
           slidesPerView={1} 
-          navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }}
+          // navigation={{
+          //   nextEl: '.swiper-button-next',
+          //   prevEl: '.swiper-button-prev',
+          // }}
         >
           <SwiperSlide>
             <div className="h-screen flex justify-center content-center md:p-64 sm:p-16 p-8 w-full bg-cover bg-[url('/images/slide1.png')] bg-no-repeat">

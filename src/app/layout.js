@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import dynamic from 'next/dynamic';
+import NavBar from "./components/NavBar";
 const WowWrapper = dynamic(() => import('./components/WowWrapper'), { ssr: false });
 
 export const metadata = {
@@ -22,7 +23,8 @@ export default function RootLayout({ children }) {
       <body  >
       <WowWrapper>
         <header>
-          <Header/>
+          {/* <Header/> */}
+          <NavBar/>
         </header> 
         <main style={{ flex: '1 0 auto',backgroundColor: '#111827' }}>
 
