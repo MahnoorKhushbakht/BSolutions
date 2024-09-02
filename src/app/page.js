@@ -9,6 +9,7 @@ import Solutions_SM from "./components/Solutions_SM";
 import SpecialPacks from "./components/SpecialPacks";
 import SpecialPacks_SM from "./components/SpecialPacks_SM";
 import Reviews from "./components/Reviews";
+import ScrollButton from "./components/ScrollButton";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
 </div>
 <OurClient/>
 <Reviews/>
+<ScrollButton/>
     </main>
   );
 }

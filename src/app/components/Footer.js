@@ -1,8 +1,15 @@
 import SocialNav from "./SocialNav";
+import Link from 'next/link';
 
 function Footer() {
+  const pages = [
+    { page: 'Home', pageLink: '/' },
+    { page: 'About', pageLink: '/about' },
+    { page: 'Contact', pageLink: '/contact' },
+    { page: 'Services', pageLink: '/services' }
+  ];
   return (
-    <footer className="bg-slate-900 text-white py-8 px-2 md:px-0">
+    <footer className="md:bg-slate-900 bg-blue-950 text-white py-8 px-2 md:px-0">
       <div  data-aos="fade" className="grid md:grid-cols-4 grid-cols-1 gap-4 ml-4 mr-4 justify-items-center md:justify-items-start text-center md:text-left">
         <div  className="leading-relaxed sm:text-center md:text-left sm:mt-4 md:mt-0">
           <ul className="list-none">
@@ -68,10 +75,13 @@ function Footer() {
         <div   className="sm:text-center md:text-left">
           <ul className="md:list-disc list-none">
             <h2 className="text-lg font-semibold mb-2">Quick Links</h2>
-            <li >Home</li>
-            <li >About Us</li>
-            <li >Services</li>
-            <li >Contact</li>
+            {pages.map((item, index) => (
+              <Link key={index} href={item.pageLink} passHref>
+               <li>
+                  {item.page}
+               </li>
+              </Link>
+            ))}
           </ul>
         </div>
         <div className="sm:text-center md:text-left">
