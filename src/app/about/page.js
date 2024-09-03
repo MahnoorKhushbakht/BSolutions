@@ -6,7 +6,7 @@ import Strengths from "../components/Strengths";
 export default function About() {
   return (
     <div className="h-auto w-full bg-slate-900">
-      <div className="w-full size-96 bg-slate-900 bg-[url('/images/page-header.jpg')] bg-cover bg-center grid place-items-center place-content-center">
+      <div className="w-full h-[90vh] bg-[url('/images/page-header.jpg')] bg-cover bg-center grid place-items-center place-content-center">
         <h1 data-aos="fade-down" data-aos-duration="600" className="font-bold md:text-5xl text-3xl mb-3 text-center text-white">
           About Us
         </h1>
@@ -15,7 +15,7 @@ export default function About() {
         </div>
       </div>
       <ProfessionalService_SM />
-      <div className="grid md:grid-cols-2 grid-cols-1 p-10 gap-2 bg-blue-950">
+      <div className="grid md:grid-cols-2 grid-cols-1 p-10 gap-4">
         <div>
           <h1
             data-aos="fade-down"
@@ -59,8 +59,8 @@ export default function About() {
           </p>
         </div>
       </div>
-      <Records />
       <Strengths />
+      <Records />
     </div>
   );
 }

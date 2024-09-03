@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 import '@/app/css/Gallery.css';
+import AboutBtn from "./AboutBtn";
 
 export default function ProfessionalService_SM() {
     return (
@@ -33,6 +34,11 @@ export default function ProfessionalService_SM() {
                 Our vision is to be the catalyst for transformative change in the tech industry, driving innovation and creating a better future. We are committed to our mission of empowering businesses and individuals through cutting-edge technologies that enhance efficiency, productivity, and sustainability. By pushing boundaries and embracing challenges, we strive to unlock the full potential of technology in shaping a brighter tomorrow.
                 </p>
 </div>
+<div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
+     <AboutBtn>       
+     Get to know us
+    </AboutBtn>   
+    </div>
 </div>
     );
 }

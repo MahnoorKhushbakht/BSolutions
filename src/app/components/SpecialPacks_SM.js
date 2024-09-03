@@ -43,7 +43,7 @@ function SpecialPacks_SM() {
                 {contentData.map((contentItem, idx) => (
                         <div
                             key={idx}
-                            className='w-80 h-full shadow-md rounded-lg overflow-hidden bg-white cursor-pointer'
+                            className='w-80 h-full shadow-md rounded-lg overflow-hidden bg-slate-900 cursor-pointer'
                             style={{ minHeight: '30rem' }} 
                         >
                             <div className="relative p-4 flex flex-col w-full h-64 bg-cover bg-blue-950 align-middle justify-center text-center">
@@ -62,7 +62,7 @@ function SpecialPacks_SM() {
                                 ))}
                             </ListGroup>
                             <div className='p-4 text-center'>
-                                <a className='w-auto text-white hover:bg-slate-500 hover:text-white transition-colors hvr-grow rounded-md p-3 bg-slate-900 inline-block' href="#">
+                                <a className='w-auto text-white hover:bg-slate-500 hover:text-white transition-colors hvr-grow rounded-md p-3 bg-slate-900 inline-block' href="/contact">
                                     Contact Us
                                 </a>
                             </div>

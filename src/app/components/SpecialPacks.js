@@ -59,7 +59,7 @@ function SpecialPacks() {
            
                         <div
                             key={idx}
-                            className='w-80 h-full shadow-md rounded-lg overflow-hidden bg-white cursor-pointer'
+                            className='w-80 h-full shadow-md rounded-lg overflow-hidden bg-slate-900 cursor-pointer'
                             onMouseEnter={() => handleFlip(idx)}
                             onMouseLeave={() => handleFlip(idx)}
                             style={{ minHeight: '30rem' }}  
@@ -90,13 +90,11 @@ function SpecialPacks() {
                         <div
                             key={idx}
                             className='w-80 h-full shadow-md rounded-lg overflow-hidden bg-slate-900 cursor-pointer flex items-center justify-center'
-                            onMouseEnter={() => handleFlip(idx)}
-                            onMouseLeave={() => handleFlip(idx)}
                             style={{ minHeight: '30rem' }} 
                         >
                             <div className='text-center'>
                                 <h1 className='text-white text-lg mb-4'>{contentItem.title}</h1>
-                                <a className='w-auto text-slate-600  hvr-grow rounded-md p-3 bg-white inline-block' href="#">
+                                <a className='w-auto  hvr-grow rounded-md p-3 bg-blue-950 text-white inline-block' href="/contact">
                                     Contact Us
                                 </a>
                             </div>

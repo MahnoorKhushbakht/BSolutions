@@ -42,7 +42,7 @@ export default function Slider() {
                 <p className="antialiased md:subpixel-antialiased md:text-xl text-lg w-full text-center text-white mt-4">
                   We are at your service with all your IT solutions.
                 </p>
-                <div className="border-4 border-transparent transition transform hover:-translate-y-1 bg-black p-3 mt-2 text-white">
+                <div className="border-4 border-transparent transition transform hover:-translate-y-1 bg-blue-950 p-3 mt-2 text-white">
                   Learn more
                 </div>
               </div>

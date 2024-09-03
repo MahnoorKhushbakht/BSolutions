@@ -62,7 +62,7 @@ export default function Strengths() {
             <div>
             <div
               data-aos-delay={delay} data-aos="fade-up" 
-              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 bg-slate-900 text-white' 
+              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 text-white bg-slate-900' 
               elevation={3}
               onMouseEnter={() => handleFlip(idx)}
               onMouseLeave={() => handleFlip(idx)}
@@ -78,7 +78,7 @@ export default function Strengths() {
             <div>
             <div 
                 data-aos-delay={delay} data-aos="fade-down"
-              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 bg-slate-900 text-white' 
+              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 text-white bg-slate-900' 
               elevation={3}
             >
               <div className='mb-3 font-semibold'>
