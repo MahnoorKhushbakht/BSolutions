@@ -60,9 +60,9 @@ export default function Strengths() {
           <li key={idx}>
               <ReactCardFlip flipSpeedFrontToBack='2' flipSpeedBackToFront='2' key={idx} isFlipped={flippedState[idx]} flipDirection="vertical">
             <div>
-            <Paper 
+            <div
               data-aos-delay={delay} data-aos="fade-up" 
-              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 bg-slate-900 text-gray-200' 
+              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 bg-slate-900 text-white' 
               elevation={3}
               onMouseEnter={() => handleFlip(idx)}
               onMouseLeave={() => handleFlip(idx)}
@@ -73,12 +73,12 @@ export default function Strengths() {
               <div>
                 {strengthItem.name}
               </div>
-            </Paper>
+            </div>
             </div>
             <div>
-            <Paper 
-              data-wow-delay={delay} 
-              className='wow animate__animated animate__bounceIn flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 bg-slate-900 text-gray-200' 
+            <div 
+                data-aos-delay={delay} data-aos="fade-down"
+              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 bg-slate-900 text-white' 
               elevation={3}
             >
               <div className='mb-3 font-semibold'>
@@ -87,7 +87,7 @@ export default function Strengths() {
               <div>
                 {strengthItem.desc}
               </div>
-            </Paper>
+            </div>
             </div>
             </ReactCardFlip>
           </li>
@@ -97,3 +97,4 @@ export default function Strengths() {
     </div>
   );
 }
+

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <header>
           <NavBar/>
         </header> 
-        <main style={{ flex: '1 0 auto',backgroundColor: '#111827' }}>
+        <main style={{ flex: '1 0 auto',backgroundColor: '#0f172a' }}>
 
           {children}
        
