@@ -34,7 +34,7 @@ export default function SocialNav() {
           height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
-        style={{ backgroundColor: "#d1d5db", color: '#030712' }}
+        style={{ backgroundColor: "#f8fafc", color: '#0f172a' }}
         aria-label="Facebook"
         onClick={handleFacebookClick}
       >
@@ -48,7 +48,7 @@ export default function SocialNav() {
           height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
-        style={{ backgroundColor: "#d1d5db", color: '#030712' }}
+        style={{ backgroundColor: "#f8fafc", color: '#0f172a' }}
         aria-label="Instagram"
         onClick={handleInstagramClick}
       >
@@ -62,7 +62,7 @@ export default function SocialNav() {
           height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
-        style={{ backgroundColor: "#d1d5db", color: '#030712' }}
+        style={{ backgroundColor: "#f8fafc", color: '#0f172a' }}
         aria-label="Linkedin"
         onClick={handleLinkedinClick}
       >
@@ -76,7 +76,7 @@ export default function SocialNav() {
           height: {  sm: '32px' ,md:'40px'},
           '& svg': { fontSize: { xs: '20px', sm: '30px' } }
         }}
-        style={{ backgroundColor: "#d1d5db", color: '#030712' }}
+        style={{ backgroundColor: "#f8fafc", color: '#0f172a' }}
         aria-label="Mail"
         onClick={handleMailClick}
       >

@@ -5,7 +5,7 @@ import Strengths from "../components/Strengths";
 export default function About(){
     return(
       <div className="min-w-svw min-h-svh">
-        <div className="w-full al h-80 bg-[url('/images/network_bg.jpg')] bg-cover bg-center grid place-content-center">
+         <div className="w-full h-svh bg-[url('/images/page-header.jpg')] bg-cover bg-center grid place-items-center place-content-center">
         <h1 data-aos="fade-down" data-aos-duration="600" className="font-bold md:text-5xl text-3xl mb-3 text-center">About Us</h1>
         <div className="flex justify-center">
         <Breadcrumbs/>
