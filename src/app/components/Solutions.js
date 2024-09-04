@@ -59,7 +59,7 @@ function Solutions() {
 
   return (
     <SolutionLayout>
-      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center place-content-center mt-5 gap-4 p-6 mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 place-items-center place-content-center gap-4 p-6 mb-5">
         {cardData.map((card, idx) => (
           <div key={idx} className="d-flex align-items-stretch" data-aos="fade-up">
             <ReactCardFlip
