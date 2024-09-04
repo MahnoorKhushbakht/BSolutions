@@ -6,6 +6,7 @@ import CellTowerIcon from '@mui/icons-material/CellTower';
 import CloudIcon from '@mui/icons-material/Cloud';
 import InfoIcon from '@mui/icons-material/Info';
 import ServiceBtn from "./ServiceBtn";
+import { usePathname} from 'next/navigation'
 
 const cardData = [
   {
@@ -47,18 +48,19 @@ const cardData = [
 ];
 
 export default function Solutions_SM() {
-  const urlPath = window.location.pathname;
+  const pathname = usePathname()
     return(
       <div className='h-auto w-full bg-blue-950'>
       <div className="grid grid-cols-1 place-items-center place-content-center ">
       <h1 data-aos="fade-down" className="text-white mt-5 font-extrabold text-2xl md:text-3xl">Our Services and Solutions</h1>
       <p data-aos="fade-down" className="text-white font-semibold text-lg md:text-2xl text-center">Your IT Infrastructure is Entrusted to Us</p>
-      {urlPath === '/services' ? '':
-    (<div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
-        <ServiceBtn>
-          Get to know us
-        </ServiceBtn>
-    </div>)}
+      {pathname !== '/services' && (
+        <div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
+          <ServiceBtn>
+            All Services
+          </ServiceBtn>
+        </div>
+      )}
       </div>
         <div className="grid grid-cols-1 place-items-center place-content-center gap-4 p-6 mb-5">
         {cardData.map((card, idx) => (

@@ -2,8 +2,9 @@
 import Image from 'react-bootstrap/Image';
 import '@/app/css/Gallery.css';
 import AboutBtn from "./AboutBtn";
+import { usePathname} from 'next/navigation'
 export default function Professional_Services() {
-  const urlPath = window.location.pathname;
+  const pathname = usePathname()
   const service_qualities = [
     {
       service_icon: (
@@ -78,12 +79,14 @@ export default function Professional_Services() {
 
 
                ))}
-    {urlPath === '/about' ? '':
-    (<div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
-        <AboutBtn>
-          Get to know us
-        </AboutBtn>
-    </div>)}
+ 
+ {pathname !== '/about' && (
+        <div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
+          <AboutBtn>
+            Get to know us
+          </AboutBtn>
+        </div>
+      )}
 </div>
 </div>
 

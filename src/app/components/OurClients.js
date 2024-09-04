@@ -43,7 +43,7 @@ export default function OurClient(){
                 <h1 data-aos="fade-down" className="font-extrabold text-xl md:text-2xl text-center">Our Customers Who Make Us</h1>
                 <p data-aos="fade-down" className="font-semibold text-base md:text-lg text-center">We work day and night for our customers and speed up their business processes.</p>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 place-items-center place-content-center gap-2 sm:gap-4 p-6 mb-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 place-items-center place-content-center gap-2 sm:gap-4 p-6 ">
                 {clients.map((clients, index) => (
                     <div data-aos-delay={`${index * 0.2}s`} data-aos="fade-down" className="w-28 h-28 sm:w-32 sm:h-32 hvr-pulse bg-slate-900 md:bg-blue-950 border border-slate-500 hvr-float" key={index}>
                         <Image
