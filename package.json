@@ -19,6 +19,7 @@
     "@react-google-maps/api": "^2.19.3",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "autoprefixer": "^10.4.20",
     "axios": "^1.7.5",
     "bootstrap": "^5.3.3",
     "countup.js": "^2.8.0",

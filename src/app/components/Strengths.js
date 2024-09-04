@@ -1,5 +1,4 @@
 'use client'
-import Paper from '@mui/material/Paper';
 import ReactCardFlip from 'react-card-flip';
 import React, { useState } from 'react';
 
@@ -52,7 +51,7 @@ export default function Strengths() {
   };
   return (
     <div className='w-full h-90 bg-blue-950  p-8'>
-    <ul className='grid md:grid-cols-4 grid-cols-1 p-8 gap-10 justify-between'>
+    <ul className='grid grid-cols-4 p-8 gap-10 place-content-center place-items-center'>
       {strength.map((strengthItem, idx) => {
         const delay = `${idx * 0.2}s`; 
 
@@ -62,7 +61,7 @@ export default function Strengths() {
             <div>
             <div
               data-aos-delay={delay} data-aos="fade-up" 
-              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 text-white bg-slate-900' 
+              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 text-slate-900 bg-slate-200' 
               elevation={3}
               onMouseEnter={() => handleFlip(idx)}
               onMouseLeave={() => handleFlip(idx)}
@@ -78,7 +77,7 @@ export default function Strengths() {
             <div>
             <div 
                 data-aos-delay={delay} data-aos="fade-down"
-              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 text-white bg-slate-900' 
+              className='flex-col drop-shadow-sm md:w-48 md:h-64 w-full h-64 leading-relaxed text-center flex items-center justify-center p-2 text-slate-900 bg-slate-200' 
               elevation={3}
             >
               <div className='mb-3 font-semibold'>

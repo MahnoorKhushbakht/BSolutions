@@ -1,6 +1,7 @@
 import Breadcrumbs from "../components/BreadCrumb";
 import ProfessionalService_SM from "../components/ProfessionalService_SM";
 import Records from "../components/Records";
+import Strengths_SM from "../components/Strength_SM";
 import Strengths from "../components/Strengths";
 
 export default function About() {
@@ -15,6 +16,9 @@ export default function About() {
         </div>
       </div>
       <ProfessionalService_SM />
+      
+      <div className="md:hidden"><Strengths_SM/></div>
+      <div className="hidden md:block mt-5"><Strengths/></div>
       <div className="grid md:grid-cols-2 grid-cols-1 p-10 gap-4">
         <div>
           <h1
@@ -59,7 +63,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <Strengths />
+
       <Records />
     </div>
   );
