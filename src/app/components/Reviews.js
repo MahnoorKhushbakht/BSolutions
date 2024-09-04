@@ -31,7 +31,7 @@ export default function Reviews() {
     ];
 
     return (
-        <div className="min-h-full p-4 w-full flex flex-col items-center justify-center md:bg-blue-950 bg-slate-900">
+        <div className="min-h-full p-1 w-full flex flex-col items-center justify-center md:bg-blue-950 bg-slate-900">
             <div className="grid grid-cols-1 place-items-center place-content-center mt-5">
                 <div className='w-24 h-24 md:bg-slate-900 bg-blue-950 flex justify-center items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-16 w-16 ">

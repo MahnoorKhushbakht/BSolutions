@@ -1,18 +1,18 @@
 'use client'
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-
+import { usePathname} from 'next/navigation'
 function Breadcrumbs() {
-    const urlPath = window.location.pathname;
+  const pathname = usePathname()
   return (
     <Breadcrumb data-aos='fade-up' className='text-center'>
       <Breadcrumb.Item className="md:text-lg text-base" href="/">
         Home
       </Breadcrumb.Item>
-      {urlPath === '/about' ? (
+      {pathname === '/about' ? (
         <Breadcrumb.Item className="md:text-lg text-base" href="/about">
           About
         </Breadcrumb.Item>
-      ) : urlPath === '/services' ? (
+      ) : pathname === '/services' ? (
         <Breadcrumb.Item className="md:text-lg text-base" href="/services">
           Services
         </Breadcrumb.Item>

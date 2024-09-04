@@ -62,7 +62,7 @@ function SpecialPacks_SM() {
                                 ))}
                             </ListGroup>
                             <div className='p-4 text-center'>
-                                <a className='w-auto text-white hover:bg-slate-500 hover:text-white transition-colors hvr-grow rounded-md p-3 bg-blue-950 inline-block' href="/contact">
+                                <a className='w-32 text-white hover:bg-slate-500 hover:text-white transition-colors hvr-grow rounded-md p-3 bg-blue-950 inline-block' href="/contact">
                                     Contact Us
                                 </a>
                             </div>
