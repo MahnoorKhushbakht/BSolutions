@@ -1,9 +1,11 @@
+'use client'
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 import '@/app/css/Gallery.css';
 import AboutBtn from "./AboutBtn";
-
+import { useRouter } from 'next/router';
 export default function ProfessionalService_SM() {
+  const urlPath = window.location.pathname;
     return (
 <div className='grid grid-cols-1 md:grid-cols-2  w-full min-h-screen bg-slate-900 place-items-center place-content-center'>
   <div data-aos="zoom" className="relative md:mt-0 mt-5">
@@ -34,11 +36,12 @@ export default function ProfessionalService_SM() {
                 Our vision is to be the catalyst for transformative change in the tech industry, driving innovation and creating a better future. We are committed to our mission of empowering businesses and individuals through cutting-edge technologies that enhance efficiency, productivity, and sustainability. By pushing boundaries and embracing challenges, we strive to unlock the full potential of technology in shaping a brighter tomorrow.
                 </p>
 </div>
-<div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
-     <AboutBtn>       
-     Get to know us
-    </AboutBtn>   
-    </div>
+{urlPath === '/about' ? '':
+    (<div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
+        <AboutBtn>
+          Get to know us
+        </AboutBtn>
+    </div>)}
 </div>
     );
 }

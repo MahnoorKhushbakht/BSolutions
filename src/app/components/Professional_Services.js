@@ -1,8 +1,9 @@
+'use client'
 import Image from 'react-bootstrap/Image';
 import '@/app/css/Gallery.css';
 import AboutBtn from "./AboutBtn";
-
 export default function Professional_Services() {
+  const urlPath = window.location.pathname;
   const service_qualities = [
     {
       service_icon: (
@@ -75,17 +76,14 @@ export default function Professional_Services() {
 
     </div>
 
- 
-               ))}
-    <div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
-     <AboutBtn>       
-   Get to know us
-    </AboutBtn>   
-    {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-</svg> */}
 
-  </div>
+               ))}
+    {urlPath === '/about' ? '':
+    (<div className='flex justify-center md:mt-5 mt-10 mb-0 md:mb-10'>
+        <AboutBtn>
+          Get to know us
+        </AboutBtn>
+    </div>)}
 </div>
 </div>
 

@@ -13,7 +13,7 @@ export default function Services(){
       </div>
       </div>
       <div className="md:hidden"><Solutions_SM/></div>
-<div className="hidden md:block"><Solutions/></div>
+<div className="hidden md:block mt-5"><Solutions/></div>
 
 <Reviews/>
 <OurClient/>
