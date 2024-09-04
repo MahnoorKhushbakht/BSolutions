@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-cube';
 import 'swiper/css/autoplay'; 
+import Link from 'next/link';
 
 export default function Slider() {
   return (
@@ -43,7 +44,9 @@ export default function Slider() {
                   We are at your service with all your IT solutions.
                 </p>
                 <div className="border-4 border-transparent transition transform hover:-translate-y-1 bg-blue-950 p-3 mt-2 text-white">
+                  <Link href='/services'>
                   Learn more
+                  </Link>
                 </div>
               </div>
             </div>
@@ -58,7 +61,9 @@ export default function Slider() {
                   We meet all the IT infrastructure needs of your Business.
                 </p>
                 <div className="border-4 shadow-xl border-transparent transition transform hover:-translate-y-1 bg-blue-950 p-3 mt-2 text-white">
+                <Link href='/services'>
                   Learn more
+                  </Link>
                 </div>
               </div>
             </div>

@@ -15,18 +15,18 @@ export default function Reviews() {
         },
         {
             imgUrl: '/images/testimonial2.png',
-            review: 'We all show you real-life examples of positive customer reviews. Oh, it\'s good.',
-            testimonial: 'Maha'
+            review: 'Our online visibility has skyrocketed, and we have seen a significant increase in qualified leads. Highly recommend!',
+            testimonial: 'David Miller'
         },
         {
             imgUrl: '/images/testimonial3.png',
-            review: 'La la la',
-            testimonial: 'Thomas'
+            review: 'Working with this team was a great experience. They understood our tech product and created a marketing campaign that effectively conveyed our message to potential customers. Our website traffic and conversions improved significantly. The results speak for themselves!',
+            testimonial: 'John Smith'
         },
         {
             imgUrl: '/images/testimonial4.png',
-            review: 'Wah waoo waoo',
-            testimonial: 'Elles'
+            review: 'Their marketing services really helped boost our app downloads. They created effective ad campaigns and content strategies that connected with our target audience. We saw noticeable growth in user engagement and retention within just a few weeks.',
+            testimonial: 'Emily Johnson'
         },
     ];
 
