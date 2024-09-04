@@ -8,6 +8,7 @@ import CellTowerIcon from '@mui/icons-material/CellTower';
 import SolutionLayout from './SolutionLayout';
 import CloudIcon from '@mui/icons-material/Cloud';
 import InfoIcon from '@mui/icons-material/Info';
+import { usePathname} from 'next/navigation'
 
 const cardData = [
   {
@@ -49,7 +50,7 @@ const cardData = [
 ];
 
 function Solutions() {
-  const urlPath = window.location.pathname;
+  const pathname = usePathname()
   const [flippedState, setFlippedState] = useState(cardData.map(() => false));
 
   const handleFlip = (idx) => {
@@ -78,7 +79,7 @@ function Solutions() {
                 <p>{card.text}</p>
               </div>
 
-              {urlPath === '/services' ? (
+              {pathname === '/services' ? (
                 <div className="bg-slate-900 flex items-center text-center justify-center w-96 h-64 p-10">
                   <h1>{card.text}</h1>
                 </div>

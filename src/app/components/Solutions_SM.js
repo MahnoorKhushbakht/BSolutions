@@ -79,7 +79,7 @@ export default function Solutions_SM() {
         <tr className='border-2 border-white'>
             <td>
          
-            {urlPath === '/services' ? (
+            {pathname === '/services' ? (
                                 <div className="bg-slate-900 flex items-center text-center justify-center w-80 h-64 p-10">
                                 <h1>{card.text}</h1>
                               </div>
