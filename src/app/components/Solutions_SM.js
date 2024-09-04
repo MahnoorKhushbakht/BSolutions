@@ -62,7 +62,7 @@ export default function Solutions_SM() {
         </div>
       )}
       </div>
-        <div className="grid grid-cols-1 place-items-center place-content-center gap-4 p-6 mb-5">
+        <div className="grid grid-cols-1 place-items-center place-content-center gap-4 p-6 ">
         {cardData.map((card, idx) => (
         <div key={idx} className="d-flex align-items-stretch " data-aos="fade-up">
 <table className='table-auto hvr-rotate '>
