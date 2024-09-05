@@ -23,6 +23,7 @@
     "axios": "^1.7.5",
     "bootstrap": "^5.3.3",
     "countup.js": "^2.8.0",
+    "css-vars-ponyfill": "^2.4.9",
     "cssesc": "^3.0.0",
     "formik": "^2.4.6",
     "framer-motion": "^11.3.28",
