@@ -36,8 +36,8 @@ function SpecialPacks_SM() {
     return (
         <div className='min-h-screen w-full'>
             <div className="grid grid-cols-1 place-items-center place-content-center mt-5">
-                <h1 data-aos="fade-down" className="font-extrabold text-2xl md:text-3xl">Special Packs</h1>
-                <p data-aos="fade-down" className="font-semibold text-lg md:text-2xl text-center">Select pricing plan to get more</p>
+                <h1 data-aos="fade-down" className="font-extrabold text-2xl text-white md:text-3xl">Special Packs</h1>
+                <p data-aos="fade-down" className="font-semibold text-lg text-white md:text-2xl text-center">Select pricing plan to get more</p>
             </div>
             <div className='grid grid-cols-1 place-content-center gap-4 place-items-center mt-10 mb-10'>
                 {contentData.map((contentItem, idx) => (

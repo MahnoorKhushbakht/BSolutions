@@ -81,7 +81,7 @@ export default function Solutions_SM() {
          
             {pathname === '/services' ? (
                                 <div className="bg-slate-900 flex items-center text-center justify-center w-80 h-64 p-10">
-                                <h1>{card.text}</h1>
+                                <h1 className='text-white'>{card.text}</h1>
                               </div>
 
               ) : (
@@ -91,7 +91,7 @@ export default function Solutions_SM() {
                     style={{ backgroundImage: `url(${card.imageUrl})` }}
                   ></div>
   <div className="relative z-10">
-    <h1>{card.text}</h1>
+    <h1 className='text-white'>{card.text}</h1>
   </div>
 </div>
               )}

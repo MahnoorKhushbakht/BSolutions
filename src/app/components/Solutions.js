@@ -81,7 +81,7 @@ function Solutions() {
 
               {pathname === '/services' ? (
                 <div className="bg-slate-900 flex items-center text-white text-center justify-center w-96 h-64 p-10">
-                  <h1>{card.text}</h1>
+                  <h1 className='text-white'>{card.text}</h1>
                 </div>
               ) : (
                 <div className="relative p-6 shadow-md text-white bg-cover flex flex-col w-96 h-64 align-middle justify-center text-center">
@@ -90,7 +90,7 @@ function Solutions() {
                     style={{ backgroundImage: `url(${card.imageUrl})` }}
                   ></div>
                   <div className="relative z-10">
-                    <h1>{card.text}</h1>
+                    <h1 className='text-white'>{card.text}</h1>
                   </div>
                 </div>
               )}

@@ -44,8 +44,8 @@ function SpecialPacks() {
     return (
         <div className=' bg-blue-950 '>
             <div className="grid grid-cols-1 place-items-center place-content-center  mb-5">
-                <h1 data-aos="fade-down" className="font-extrabold text-xl md:text-2xl text-center mt-5">Special Packs</h1>
-                <p data-aos="fade-down" className="font-semibold text-base md:text-lg text-center">Select pricing plan to get more</p>
+                <h1 data-aos="fade-down" className="font-extrabold text-xl text-white md:text-2xl text-center mt-5">Special Packs</h1>
+                <p data-aos="fade-down" className="font-semibold text-base text-white md:text-lg text-center">Select pricing plan to get more</p>
             </div>
             <div className='grid grid-cols-3 place-content-center gap-4 place-items-center'>
                 {contentData.map((contentItem, idx) => (
