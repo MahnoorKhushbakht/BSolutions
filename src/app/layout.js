@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 const WowWrapper = dynamic(() => import('./components/WowWrapper'), { ssr: false });
 
 export const metadata = {
-  title: "B Solutions",
+  title: "Market Minds",
   description: "Discover and inspire.",
 };
 

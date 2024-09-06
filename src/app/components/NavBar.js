@@ -21,7 +21,7 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 2 }}>
             <Link href="/" passHref>
-            <h1 className='font-extrabold bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-gray-800 text-3xl'>BE Solutions.</h1>
+            <h1 className='font-extrabold bg-clip-text text-transparent  bg-gradient-to-r from-blue-400 to-gray-800 text-3xl'>Market Minds.</h1>
             </Link>
           </Box>
 
