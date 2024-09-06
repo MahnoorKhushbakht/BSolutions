@@ -55,7 +55,7 @@ export default function Professional_Services() {
                 <h1 data-aos="fade-down" className="font-bold sm:text-lg md:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-800 text-2xl">
                     Professional IT Service
                 </h1>
-                <p data-aos="fade-down"  className="text-lg">
+                <p data-aos="fade-down"  className="text-lg text-white">
                     With our reliable service understanding and professional staff, we aim to present the expectations and requirements to the enterprises in the fastest way with technical support service.
                 </p>
 
@@ -70,7 +70,7 @@ export default function Professional_Services() {
         <h1 className="sm:text-xl md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-gray-400 text-2xl">
         {service_qualities.service_heading}
         </h1>
-        <p className="sm:text-lg md:text-base sm:text-center md:text-left">
+        <p className="sm:text-lg md:text-base sm:text-center md:text-left text-white">
         {service_qualities.service_paragraph}
         </p>
     </div>

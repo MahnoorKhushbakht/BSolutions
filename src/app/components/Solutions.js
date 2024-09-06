@@ -80,7 +80,7 @@ function Solutions() {
               </div>
 
               {pathname === '/services' ? (
-                <div className="bg-slate-900 flex items-center text-center justify-center w-96 h-64 p-10">
+                <div className="bg-slate-900 flex items-center text-white text-center justify-center w-96 h-64 p-10">
                   <h1>{card.text}</h1>
                 </div>
               ) : (
