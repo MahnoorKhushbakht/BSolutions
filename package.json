@@ -29,6 +29,7 @@
     "framer-motion": "^11.3.28",
     "hover.css": "^2.3.2",
     "leaflet": "^1.9.4",
+    "mongoose": "^8.6.1",
     "next": "^14.2.6",
     "odometer": "^0.4.8",
     "pigeon-maps": "^0.21.6",

@@ -28,24 +28,42 @@ const Contact = () => {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const outerTheme = useTheme();
-  const apiUrl = process.env.REACT_APP_API_URL;
-  const handleSubmit = (formData, resetFormFields) => {
-    setIsLoading(true);
-  
-    axios
-      .post(`${apiUrl}/contactme`, formData)
-      .then((res) => {
-        setIsSuccess(true);
-        resetFormFields();
-      })
-      .catch((error) => {
-        setIsError(true);
-      })
-      .finally(() => {
-        setIsLoading(false);
+
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL_Comments;
+console.log(apiUrl)
+let handleSubmit = async (formData, resetFormFields) => {
+  setIsLoading(true);
+
+  try {
+      let response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
       });
-  };
-  
+
+      if (response.ok) {
+          // Ensure the response body is JSON
+          const responseData = await response.json();
+          if (responseData && responseData.data) {
+              setIsSuccess(true);
+              resetFormFields();
+          } else {
+              throw new Error('Invalid response data');
+          }
+      } else {
+          setIsError(true);
+      }
+  } catch (error) {
+      console.error('Error saving data:', error);
+      alert('Something went wrong! Please try again later.');
+  } finally {
+      setIsLoading(false);
+  }
+};
+
+
   const cardStyle = {
     backgroundColor: 'transparent',
     maxWidth: '90%',
