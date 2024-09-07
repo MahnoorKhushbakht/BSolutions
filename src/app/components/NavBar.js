@@ -29,7 +29,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
            
                         <Link href="/" passHref>
-                        <h1 className='font-extrabold bg-clip-text text-transparent mt-2 mb-2 bg-gradient-to-r from-blue-400 to-gray-800 text-2xl'>BE Solutions.</h1>
+                        <h1 className='font-extrabold bg-clip-text text-transparent mt-2 mb-2 bg-gradient-to-r from-blue-400 to-gray-800 text-2xl'>Market Minds.</h1>
             </Link>
           </Box>
 
